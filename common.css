@@ -52,5 +52,5 @@ body {
 
 .navbar-link:hover,
 .navbar-title:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
