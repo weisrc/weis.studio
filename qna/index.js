@@ -93,7 +93,7 @@ async function mainSequence() {
 
   await cliPrintLn("What is your education?", "cli-header");
   await cliPrintLn("Hmmm...");
-  await cliPrintLn("I am still in college... Hahaha! I am a self-taught programmer...");
+  await cliPrintLn("I am still in highschool... Hahaha! I am a self-taught programmer...");
   await cliPrintLn("However, I've been learning new technologies one after the other for almost 4 years.");
   await cliPrintLn("Are you still interested?");
   if (!(await cliYesNo("Yes!", "Nope. Good bye!"))) {
