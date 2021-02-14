@@ -1,0 +1,114 @@
+@import url(common.css);
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  transform: translate(50px, 0) scale(0.7) rotate3d(-1, 1, 1, 45deg);
+  box-shadow: 50px 30px var(--primary);
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+
+.smartphone-text {
+  position: absolute;
+  left: -50%;
+  top: 20%;
+  font-size: 5rem;
+  color: crimson;
+  font-family: "Fira Mono", monospace;
+  text-shadow: 3px 3px var(--primary);
+}
+
+.offer-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.offer {
+  margin: 1rem;
+  border: 1px solid grey;
+  padding: 1rem;
+  box-shadow: 5px 5px var(--primary);
+  flex-basis: 0;
+  flex: 1 1 0px;
+}
+
+.offer-title {
+  color: var(--secondary);
+  font-family: "Fira Mono", monospace;
+  text-shadow: 1px 1px var(--primary);
+}
+
+.offer-body {
+  font-size: 1.2rem;
+}
+
+.offer-btn {
+  appearance: none;
+  border: none;
+  margin-top: 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px;
+  outline: none;
+  color: white;
+  transition: 0.1s;
+  background: var(--secondary);
+  display: block;
+  box-shadow: 5px 5px 0px #a10f2c;
+  cursor: pointer;
+}
+
+.offer-btn:hover {
+  transform: scale(1.1);
+}
+
+.offer-btn:active {
+  transform: none;
+}
+
+@media (max-width: 1000px) {
+  .offer-container {
+    flex-direction: column;
+  }
+}

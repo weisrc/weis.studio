@@ -1,0 +1,103 @@
+@import url(../common.css);
+
+.cli {
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  /* border-radius: 10px; */
+  border: 1px grey solid;
+  box-shadow: 5px 5px 0 var(--primary);
+}
+
+.cli-header,
+.cli-line {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 5px;
+  white-space: pre-wrap;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cli-header {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px var(--primary) solid;
+  color: var(--secondary);
+  font-family: "Fira Mono", monospace;
+  text-shadow: 1px 1px var(--primary);
+}
+
+.active {
+  border-right: 5px solid var(--secondary);
+}
+
+.em {
+  font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 1px 1px var(--primary);
+}
+
+.cli-box {
+  appearance: none;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  padding: 5px;
+  outline: none;
+  transition: 0.1s;
+  width: calc(100% - 4rem);
+  background: #222;
+  padding: 1rem;
+  padding-right: 3rem;
+  box-shadow: 5px 5px #1a1a1a;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Fira Mono", monospace;
+  color: lightgray;
+}
+
+.cli-success {
+  background: #131;
+  box-shadow: 5px 5px #121;
+}
+
+.cli-error {
+  background: #311;
+  box-shadow: 5px 5px #211;
+}
+
+.cli-btn {
+  appearance: none;
+  border: none;
+  margin-right: 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px;
+  outline: none;
+  color: white;
+  transition: 0.1s;
+}
+
+.cli-btn:disabled {
+  opacity: 0.5;
+}
+
+.cli-margin {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cli-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cli-btn-yes {
+  background: var(--secondary);
+  box-shadow: 5px 5px 0px #a70f2d;
+}
+
+.cli-btn-no {
+  background: rgb(97, 85, 85);
+  box-shadow: 5px 5px 0px #444444;
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans&display=swap");
+
+:root {
+  --primary: slateblue;
+  --secondary: crimson;
+  --success: #03a84e;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: #121414;
+  color: lightgray;
+}
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  /* background: var(--primary-bg); */
+  /* border-bottom: var(--primary) 5px solid; */
+}
+.navbar-title {
+  font-weight: 100;
+  color: var(--primary-text);
+  background: var(--primary);
+  color: white;
+  box-shadow: 5px 5px indigo;
+  padding: 3px;
+  margin-right: 1rem;
+  font-size: x-large;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: 0.1s;
+  font-family: "Fira Mono", monospace;
+}
+
+.navbar-link {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--secondary);
+  text-shadow: 1px 1px var(--primary);
+  transition: 0.1s;
+  display: inline-block;
+}
+
+.navbar-link:hover,
+.navbar-title:hover {
+  transform: scale(1.2);
+}
