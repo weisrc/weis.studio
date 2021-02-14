@@ -1,4 +1,23 @@
 @import url(common.css);
+
+@keyframes smartphone-anim {
+  0% {
+    transform: translate(50px, 0) scale(0.7) rotate3d(-1, 1, 1, 45deg);
+    text-shadow: 3px 3px var(--primary);
+    box-shadow: 10px 10px var(--primary);
+  }
+  50% {
+    transform: translate(50px, -100px) scale(0.7) rotate3d(-1, 1, 1, 60deg);
+    text-shadow: 6px 3px var(--primary);
+    box-shadow: 30px 10px var(--primary);
+  }
+  100% {
+    transform: translate(50px, 0) scale(0.7) rotate3d(-1, 1, 1, 45deg);
+    text-shadow: 3px 3px var(--primary);
+    box-shadow: 10px 10px var(--primary);
+  }
+}
+
 /* The device with borders */
 .smartphone {
   position: relative;
@@ -9,8 +28,9 @@
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
-  transform: translate(50px, 0) scale(0.7) rotate3d(-1, 1, 1, 45deg);
-  box-shadow: 50px 30px var(--primary);
+  animation-name: smartphone-anim;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 /* The horizontal line on the top of the device */
@@ -53,9 +73,9 @@
   left: -50%;
   top: 20%;
   font-size: 5rem;
-  color: crimson;
+  color: var(--secondary);
   font-family: "Fira Mono", monospace;
-  text-shadow: 3px 3px var(--primary);
+  text-shadow: inherit;
 }
 
 .offer-container {
@@ -67,6 +87,7 @@
 .offer {
   margin: 1rem;
   border: 1px solid grey;
+  background: #113;
   padding: 1rem;
   box-shadow: 5px 5px var(--primary);
   flex-basis: 0;
@@ -105,6 +126,47 @@
 
 .offer-btn:active {
   transform: none;
+}
+
+@keyframes scroll-down-anim {
+  50% {
+    transform: translate(0, 30px);
+  }
+}
+
+.scroll-down {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  left: calc(50vw - 32px);
+  bottom: 50px;
+  background: var(--secondary);
+  cursor: pointer;
+  box-shadow: 5px 5px #22e674;
+  animation-name: scroll-down-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  border-right: white 10px solid;
+  border-bottom: white 10px solid;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: 17px;
+  transform: rotate(45deg);
+}
+
+.scroll-down-arrow-line {
+  position: absolute;
+  width: 12px;
+  height: 30px;
+  top: 13px;
+  left: 26px;
+  background: white;
 }
 
 @media (max-width: 1000px) {

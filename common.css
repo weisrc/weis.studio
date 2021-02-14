@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans&display=swap");
 
 :root {
-  --primary: slateblue;
-  --secondary: crimson;
+  --primary: #7565e2;
+  --secondary: #eb1f48;
   --success: #03a84e;
 }
 
@@ -12,8 +12,9 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background: #121414;
+  background: #112;
   color: lightgray;
+  scroll-behavior: smooth;
 }
 .navbar {
   display: flex;
@@ -29,7 +30,7 @@ body {
   color: var(--primary-text);
   background: var(--primary);
   color: white;
-  box-shadow: 5px 5px indigo;
+  box-shadow: 5px 5px #690eaa;
   padding: 5px;
   margin-right: 1rem;
   font-size: x-large;
