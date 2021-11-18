@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "io.ionic.starter",
+               "sha256_cert_fingerprints": ["BB:6F:47:81:4C:09:31:B1:96:C0:D2:FC:B6:8A:C8:16:41:71:D6:4E:86:BB:08:52:0D:CC:C5:C2:A5:E6:36:48"] }
+}]
